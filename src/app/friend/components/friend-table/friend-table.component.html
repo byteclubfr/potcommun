@@ -1,0 +1,18 @@
+<table class="table is-fullwidth is-striped is-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th style="width:1px"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let friend of friends">
+      <td>
+        <img [src]="friend.avatar"> {{ friend.name }}
+      </td>
+      <td>
+        <a class="button is-info" [routerLink]="['/friends', friend.id]">edit</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

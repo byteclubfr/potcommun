@@ -1,0 +1,32 @@
+div.friends {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.debts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.debts strong {
+  font-size: 2em;
+}
+
+div.debts strong {
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  div.debts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+  div.debts strong {
+    margin-right: 0;
+    margin-top: 1em;
+    text-align: center;
+  }
+}

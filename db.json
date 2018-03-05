@@ -1,0 +1,39 @@
+{
+  "friends": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@doe.fr",
+      "expense": 40,
+      "avatar": "/assets/users/users-10.svg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "jane@doe.fr",
+      "expense": 42,
+      "avatar": "/assets/users/users-11.svg"
+    },
+    {
+      "id": 3,
+      "name": "Ron Doe",
+      "email": "ron@doe.fr",
+      "expense": 8,
+      "avatar": "/assets/users/users-14.svg"
+    },
+    {
+      "name": "Thomas",
+      "email": "tom@ici",
+      "expense": 5,
+      "id": 4,
+      "avatar": "/assets/users/users-2.svg"
+    },
+    {
+      "name": "paul",
+      "email": "paul@yo",
+      "expense": 11,
+      "id": 5,
+      "avatar": "/assets/users/users-7.svg"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  padding: 1em;
+  width: 20%;
+}
+
+@media screen and (max-width: 1023px) {
+  :host {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :host {
+    width: calc(100% - 2em);
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}

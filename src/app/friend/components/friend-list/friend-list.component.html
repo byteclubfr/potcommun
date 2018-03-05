@@ -1,0 +1,12 @@
+<section class="section">
+  <div class="container">
+    <ng-container *ngIf="friends$ | async as friends;else loading">
+      <bc-friend-table [friends]="friends"></bc-friend-table>
+    </ng-container>
+    <ng-template #loading>Loading</ng-template>
+    <a routerLink="/friends/add" class="button is-info">
+      <i class="material-icons">add</i>
+      Add friend
+    </a>
+  </div>
+</section>

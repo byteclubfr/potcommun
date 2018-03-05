@@ -1,0 +1,8 @@
+<div class="content">
+  <ul>
+    <li *ngFor="let tr of transactions">
+      {{ tr.from.name }} doit
+      <strong>{{ tr.value | currency:'EUR' }}</strong> à {{ tr.to.name }}
+    </li>
+  </ul>
+</div>

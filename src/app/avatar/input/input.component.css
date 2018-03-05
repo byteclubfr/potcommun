@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+img {
+  width: 10%;
+  min-width: 100px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin: 0.5em;
+}
+
+img.is-active {
+  box-shadow: 3px 3px 3px #dbdbdb;
+  border: 1px solid #dbdbdb;
+}
+
+img:hover {
+  border: 1px solid #3273dc;
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}

@@ -1,0 +1,25 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+            <input class="input" type="text" formControlName="name">
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+            <input class="input" type="text" formControlName="email">
+        </div>
+    </div>
+
+    <avatar-input [avatars]="avatars" formControlName="avatar"></avatar-input>
+
+    <div class="field is-grouped">
+        <div class="control">
+            <button class="button is-link">Submit</button>
+        </div>
+    </div>
+</form>
+
+<pre>{{ form.value | json }}</pre>

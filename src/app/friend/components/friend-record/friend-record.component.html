@@ -1,0 +1,8 @@
+<section class="section">
+  <div class="container">
+    <ng-container *ngIf="friend$ | async as friend; else loading">
+      <bc-friend-form [friend]="friend" (save)="save($event)"></bc-friend-form>
+    </ng-container>
+    <ng-template #loading></ng-template>
+  </div>
+</section>

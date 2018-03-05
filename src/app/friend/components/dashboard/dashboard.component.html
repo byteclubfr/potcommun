@@ -1,0 +1,22 @@
+<section class="hero is-info is-bold" *ngIf="transactions$ | async as transactions;else loading">
+  <div class="hero-body">
+    <div class="container">
+      <div class="debts">
+        <bc-debts [transactions]="transactions"></bc-debts>
+        <strong>
+          Total dépenses : {{ total$ | async | currency:'EUR' }}
+        </strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" *ngIf="friends$ | async as friends;else loading">
+  <div class="container">
+    <div class="friends">
+      <bc-friend-card [friend]="friend" (addExpense)="addExpense(friend, $event)" *ngFor="let friend of friends"></bc-friend-card>
+    </div>
+  </div>
+</section>
+
+<ng-template #loading>Loading ...</ng-template>

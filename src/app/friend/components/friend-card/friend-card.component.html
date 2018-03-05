@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-image">
+        <figure class="image">
+            <img [src]="friend.avatar" alt="Placeholder image">
+        </figure>
+    </div>
+    <div class="card-content">
+        <div class="content">
+            <strong>{{ friend.name }}</strong>
+            {{ friend.expense | currency:'EUR' }}
+        </div>
+        <div class="content">
+            <form [formGroup]="form" (submit)="addMoney()">
+                <div class="field has-addons">
+                    <div class="control">
+                        <input class="input" type="number" formControlName="expense" placeholder="add expense">
+                    </div>
+                    <div class="control">
+                        <button class="button is-info">
+                            <i class="material-icons">add</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

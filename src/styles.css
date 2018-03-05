@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+.navbar-brand .navbar-item {
+  font-size: 22px;
+  font-family: "Gochi Hand", cursive;
+  color: #fcd0c4 !important;
+}
